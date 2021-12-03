@@ -1,0 +1,22 @@
+.intro {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 100px);
+    color: white;
+    background: url(../../../assets/34.jpg) no-repeat;
+    background-position: center top;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+}
+
+.intro h1 {
+    font-family: 'MerchantLedger-Rough';
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4vw;
+}

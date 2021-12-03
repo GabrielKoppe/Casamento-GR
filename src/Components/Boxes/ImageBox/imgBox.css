@@ -1,0 +1,12 @@
+@media screen and (orientation: portrait) {
+    .imagem {
+        width: 100%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .imagem {
+        width: 130%;
+        height: 130%;
+    }
+}

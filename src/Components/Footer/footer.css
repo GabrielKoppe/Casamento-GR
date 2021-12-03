@@ -1,0 +1,14 @@
+
+@media screen and (min-width: 350px) {
+    .footer-logo {
+        height: 10vw;
+        width: 10vw;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .footer-logo {
+        height: 6vw;
+        width: 6vw;
+    }
+}

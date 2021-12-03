@@ -1,0 +1,65 @@
+.form_container {
+    display: grid;
+    justify-items: center;
+}
+
+.formbox {
+    width: 90%;
+    overflow: hidden;
+}
+
+.formbox input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgb(68, 59, 52);
+    line-height: 2.3;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid rgb(68, 59, 52);
+}
+
+#form-number-invited {
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn-number-invited {
+    width: 30%;
+}
+
+#ipt-number-invited {
+    border-bottom: none;
+    width: 65%;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    all: unset;
+    min-width: 21px;
+    min-height: 45px;
+    margin: 30px;
+    padding: 0px;
+    background-image: linear-gradient(to top, transparent 0px, transparent 16px, #F4EADC 16px, #F4EADC 26px, transparent 26px, transparent 35px, #000 35px, #000 36px, transparent 36px, transparent 40px), linear-gradient(to right, transparent 0px, transparent 10px, #000 10px, #000 11px, transparent 11px, transparent 21px);
+    transform: rotate(90deg) scale(0.8, 0.9);
+    cursor: pointer;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(68, 59, 52);
+    opacity: 1;
+    /* Firefox */
+}
+
+@media screen and (orientation: portrait) {
+    .formbox input {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .formbox input {
+        font-size: 1.4em;
+    }
+}

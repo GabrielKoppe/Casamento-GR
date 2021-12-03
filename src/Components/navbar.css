@@ -1,0 +1,66 @@
+/*Barra de navegação*/
+
+.nav {
+    background-color: rgb(229, 208, 174);
+    position: sticky;
+    height: 100px;
+    top: 0px;
+    width: 100%;
+    z-index: 100000;
+    font-family: 'MerchantLedger';
+}
+
+.nav-logo:hover {
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+
+/*Mobile*/
+
+@media screen and (orientation: portrait) {
+    .nav-logo {
+        height: 50px;
+        width: 50px;
+        position: center;
+    }
+    .nav .nav-content {
+        padding: 0rem 0rem;
+        text-align: center;
+        height: 100%;
+    }
+    .nav-item {
+        font-size: 3vw;
+        display: inline;
+        margin: 0 2vw;
+        color: rgb(68, 59, 52);
+    }
+}
+
+
+/* Full Scream*/
+
+@media screen and (orientation: landscape) {
+    .nav-logo {
+        height: 90px;
+        width: 90px;
+    }
+    .nav .nav-content {
+        max-width: 950px;
+        padding: 0rem 0rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .nav-item {
+        font-size: 1.4em;
+        display: inline;
+        margin-left: 2rem;
+        color: rgb(68, 59, 52);
+    }
+}

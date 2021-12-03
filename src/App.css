@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+/* Definiçoes do mapa*/
+
+.leaflet-container {
+    width: 100%;
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* fontes*/
+
+@font-face {
+    font-family: 'MerchantLedger';
+    src: url('./fonts/MerchantLedger.ttf') format('truetype')
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: 'MerchantLedger-Thin';
+    src: url('./fonts/MerchantLedger-Thin.ttf') format('truetype')
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: 'MerchantLedger-Rough';
+    src: url('./fonts/MerchantLedger-Rough.ttf') format('truetype')
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+    font-family: 'MerchantLedger-RoughThin';
+    src: url('./fonts/MerchantLedger-RoughThin.ttf') format('truetype')
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*Botão*/
+
+.btn {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid rgb(68, 59, 52);
+    color: rgb(68, 59, 52);
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(68, 59, 52);
+    color: #fff;
+    transition: .5s;
+}
+
+.btn:active {
+    background-color: rgb(68, 59, 52);
+    color: #0f47bf;
+}
+
+
+/*h1*/
+
+@media screen and (orientation: portrait) {
+    h1 {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    h1 {
+        font-size: 2vw;
+    }
 }
