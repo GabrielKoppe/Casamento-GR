@@ -29,7 +29,7 @@ function FormBox({title}) {
             const invited = jsonContructor(ev)
             
             console.log(invited);
-            fetch(`http://127.0.0.1:5000/invited`, {
+            fetch(`${process.env.REACT_APP_API_URL}/invited`, {
                 "method": 'POST',
                 headers: {
                   'Accept': 'application/json',
