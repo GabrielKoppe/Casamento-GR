@@ -5,7 +5,6 @@
     color: white;
     background: url(../../../assets/34.jpg) no-repeat;
     background-position: center top;
-    background-color: black;
     background-size: cover;
     position: relative;
 }
@@ -18,5 +17,30 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 4vw;
+    font-size: 5rem;
+    width: 100%;
+}
+
+@media (max-width: 1450px) {
+    .intro h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 940px) {
+    .intro h1 {}
+}
+
+@media (max-width: 790px) {
+    .intro h1 {}
+}
+
+@media (max-width: 570px) {
+    .intro h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h1 {}
 }

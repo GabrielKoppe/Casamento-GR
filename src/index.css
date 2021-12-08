@@ -17,3 +17,26 @@
     background-image: url(../src/assets/flores2.png);
     background-attachment: fixed;
 }
+
+
+/* fontes*/
+
+@font-face {
+    font-family: 'MerchantLedger';
+    src: url('./fonts/MerchantLedger.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'MerchantLedger-Thin';
+    src: url('./fonts/MerchantLedger-Thin.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'MerchantLedger-Rough';
+    src: url('./fonts/MerchantLedger-Rough.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'MerchantLedger-RoughThin';
+    src: url('./fonts/MerchantLedger-RoughThin.ttf') format('truetype')
+}

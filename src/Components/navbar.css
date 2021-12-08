@@ -1,4 +1,4 @@
-/*Barra de navegação*/
+/* Barra de navegação */
 
 .nav {
     background-color: rgb(229, 208, 174);
@@ -6,8 +6,31 @@
     height: 100px;
     top: 0px;
     width: 100%;
-    z-index: 100000;
+    z-index: 10000;
     font-family: 'MerchantLedger';
+}
+
+.nav-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-items {
+    font-size: 1.4rem;
+    display: flex;
+    color: rgb(68, 59, 52);
+    column-gap: 2rem;
+    list-style: none;
+}
+
+.nav-logo {
+    height: 90px;
+    width: 90px;
 }
 
 .nav-logo:hover {
@@ -18,49 +41,58 @@
     cursor: pointer;
 }
 
+@media (max-width: 1400px) {
+    .nav-logo {
+        height: 70px;
+        width: 70px;
+        position: center;
+    }
+    .nav-content {
+        max-width: 1000px;
+    }
+    .nav-items {
+        font-size: 1.1rem;
+        column-gap: 2rem;
+    }
+}
 
-/*Mobile*/
+@media (max-width: 970px) {
+    .nav-content {
+        max-width: 800px;
+    }
+}
 
-@media screen and (orientation: portrait) {
+@media (max-width: 760px) {
     .nav-logo {
         height: 50px;
         width: 50px;
         position: center;
     }
-    .nav .nav-content {
-        padding: 0rem 0rem;
+    .nav-content {
         text-align: center;
-        height: 100%;
+        flex-direction: column;
+        max-width: 600px;
+        justify-content: space-evenly
     }
-    .nav-item {
-        font-size: 3vw;
-        display: inline;
-        margin: 0 2vw;
-        color: rgb(68, 59, 52);
+    .nav-items {
+        font-size: 1.1rem;
+        column-gap: 1.8rem;
     }
 }
 
-
-/* Full Scream*/
-
-@media screen and (orientation: landscape) {
-    .nav-logo {
-        height: 90px;
-        width: 90px;
+@media (max-width: 640px) {
+    .nav-content {
+        width: 100%;
     }
-    .nav .nav-content {
-        max-width: 950px;
-        padding: 0rem 0rem;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
+    .nav-items {
+        font-size: 1rem;
+        column-gap: 1rem;
     }
-    .nav-item {
-        font-size: 1.4em;
-        display: inline;
-        margin-left: 2rem;
-        color: rgb(68, 59, 52);
+}
+
+@media (max-width: 510px) {
+    .nav-items {
+        font-size: 0.8rem;
+        column-gap: 1rem;
     }
 }

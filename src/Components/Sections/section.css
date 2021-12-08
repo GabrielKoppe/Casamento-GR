@@ -1,63 +1,60 @@
 h1 {
     font-family: 'MerchantLedger';
+    font-size: 2.3rem;
+    padding-top: 2rem;
 }
 
 p {
     font-family: 'MerchantLedger-Thin';
+    font-size: 1.3rem;
 }
 
 .section-content {
     width: 100%;
     height: calc(100vh - 100px);
     background-color: transparent;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-@media screen and (orientation: portrait) {
-    .boxes {
-        display: inline-grid;
-        grid: auto / auto;
-        justify-content: center;
-        padding: 3vh;
-        gap: 3vh;
-    }
-    .box1 {
-        width: calc(100vw - 6vh);
-        height: calc(calc(calc(100vh - 100px) / 2) - 4.5vh);
-    }
-    .box2 {
-        width: calc(100vw - 6vh);
-        height: calc(calc(calc(100vh - 100px) / 2) - 4.5vh);
-    }
+.boxes {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 1rem;
 }
 
-@media screen and (orientation: landscape) {
+.box {
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+}
+
+@media (max-width: 1400px) {
     .section-content {
-        max-width: 1200px;
-        margin: 0 auto;
+        max-width: 900px;
     }
+}
+
+@media (max-width: 800px) {
     .boxes {
-        display: grid;
-        grid: auto / auto auto;
-        padding: 20px;
+        flex-direction: column;
     }
-    .box1 {
-        width: calc(600px - 29px);
-        height: calc(calc(100vh - 100px) - 40px);
-        vertical-align: middle;
+    .box {
+        height: 50%;
     }
-    .box2 {
-        width: calc(600px - 29px);
-        height: calc(calc(100vh - 100px) - 40px);
-        vertical-align: middle;
+    h1 {
+        font-size: 1.4rem;
+        padding-top: 0.8rem;
     }
-}
-
-.box1 {
-    text-align: center;
-    overflow: hidden;
-}
-
-.box2 {
-    text-align: center;
-    overflow: hidden;
+    p {
+        font-size: 0.8rem;
+    }
+    #image-form {
+        height: 0%;
+    }
+    #form-mobile {
+        height: 100%;
+    }
 }

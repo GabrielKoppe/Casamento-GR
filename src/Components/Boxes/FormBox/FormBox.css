@@ -1,11 +1,27 @@
-.form_container {
+.form-container {
     display: grid;
     justify-items: center;
 }
 
 .formbox {
     width: 90%;
-    overflow: hidden;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(99, 98, 107, 0.5) transparent;
+}
+
+.formbox::-webkit-scrollbar {
+    width: 6px;
+}
+
+.formbox::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.formbox::-webkit-scrollbar-thumb {
+    background-color: rgba(99, 98, 107, 0.5);
+    border-radius: 20px;
+    border: 3px solid transparent;
 }
 
 .formbox input {
@@ -17,6 +33,7 @@
     width: 100%;
     float: left;
     border-bottom: 1px solid rgb(68, 59, 52);
+    font-size: 1.2rem;
 }
 
 #form-number-invited {
@@ -34,12 +51,20 @@
     text-align: center;
 }
 
+#header-invited {
+    font-size: 1.3rem;
+}
+
+#container-all-invited {
+    max-height: 60vh;
+}
+
 input[type=number]::-webkit-inner-spin-button {
     all: unset;
     min-width: 21px;
     min-height: 45px;
     margin: 30px;
-    padding: 0px;
+    padding: 0;
     background-image: linear-gradient(to top, transparent 0px, transparent 16px, #F4EADC 16px, #F4EADC 26px, transparent 26px, transparent 35px, #000 35px, #000 36px, transparent 36px, transparent 40px), linear-gradient(to right, transparent 0px, transparent 10px, #000 10px, #000 11px, transparent 11px, transparent 21px);
     transform: rotate(90deg) scale(0.8, 0.9);
     cursor: pointer;
@@ -52,14 +77,20 @@ input[type=number]::-webkit-inner-spin-button {
     /* Firefox */
 }
 
-@media screen and (orientation: portrait) {
-    .formbox input {
-        font-size: 4.5vw;
-    }
+.container-invited {
+    height: 12vh;
+    width: 100%;
 }
 
-@media screen and (orientation: landscape) {
+.error-text {
+    color: #bf2f0f;
+}
+
+@media (max-width: 800px) {
+    #header-invited {
+        font-size: 0.8rem;
+    }
     .formbox input {
-        font-size: 1.4em;
+        font-size: 0.8rem;
     }
 }

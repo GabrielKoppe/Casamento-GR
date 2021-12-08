@@ -1,12 +1,21 @@
-@media screen and (orientation: portrait) {
-    .imagem {
-        width: 100%;
+.img-box {
+    text-align: center;
+}
+
+.img {
+    width: 130%;
+}
+
+@media (max-width: 1200px) {
+    .img {
+        width: auto;
+        height: 100%;
     }
 }
 
-@media screen and (orientation: landscape) {
-    .imagem {
-        width: 130%;
-        height: 130%;
+@media (max-width: 800px) {
+    .img {
+        width: 100%;
+        height: auto;
     }
 }

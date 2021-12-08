@@ -6,30 +6,20 @@
 }
 
 
-/* fontes*/
+/* DEFINIÇÂO DE FONTE */
 
-@font-face {
-    font-family: 'MerchantLedger';
-    src: url('./fonts/MerchantLedger.ttf') format('truetype')
+body {
+    font-size: 62.5%;
 }
 
-@font-face {
-    font-family: 'MerchantLedger-Thin';
-    src: url('./fonts/MerchantLedger-Thin.ttf') format('truetype')
-}
-
-@font-face {
-    font-family: 'MerchantLedger-Rough';
-    src: url('./fonts/MerchantLedger-Rough.ttf') format('truetype')
-}
-
-@font-face {
-    font-family: 'MerchantLedger-RoughThin';
-    src: url('./fonts/MerchantLedger-RoughThin.ttf') format('truetype')
+@media (max-width: 640px) {
+    body {
+        font-size: 50%;
+    }
 }
 
 
-/*Botão*/
+/* BASE BOTÂO */
 
 .btn {
     width: 100%;
@@ -37,7 +27,7 @@
     border: 2px solid rgb(68, 59, 52);
     color: rgb(68, 59, 52);
     padding: 10px;
-    font-size: 18px;
+    font-size: 1.2rem;
     cursor: pointer;
     margin: 20px 0;
     border-radius: 10px;
@@ -54,17 +44,8 @@
     color: #0f47bf;
 }
 
-
-/*h1*/
-
-@media screen and (orientation: portrait) {
-    h1 {
-        font-size: 6vw;
-    }
-}
-
-@media screen and (orientation: landscape) {
-    h1 {
-        font-size: 2vw;
+@media (max-width: 640px) {
+    .btn {
+        font-size: 0.9rem;
     }
 }
