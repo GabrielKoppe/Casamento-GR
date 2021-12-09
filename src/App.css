@@ -9,12 +9,18 @@
 /* DEFINIÇÂO DE FONTE */
 
 body {
-    font-size: 62.5%;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 640px) {
     body {
-        font-size: 50%;
+        font-size: 10px;
     }
 }
 
