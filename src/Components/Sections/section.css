@@ -37,7 +37,13 @@ p {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 970px) {
+    .section-content {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 760px) {
     .boxes {
         flex-direction: column;
     }
