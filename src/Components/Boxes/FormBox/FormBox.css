@@ -56,7 +56,9 @@
 }
 
 #container-all-invited {
-    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    max-height: 55vh;
 }
 
 input[type=number]::-webkit-inner-spin-button {
@@ -78,7 +80,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .container-invited {
-    height: 12vh;
+    height: auto;
     width: 100%;
 }
 
@@ -86,11 +88,14 @@ input[type=number]::-webkit-inner-spin-button {
     color: #bf2f0f;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
     #header-invited {
         font-size: 0.8rem;
     }
     .formbox input {
         font-size: 0.8rem;
+    }
+    #container-all-invited {
+        max-height: 63vh;
     }
 }
