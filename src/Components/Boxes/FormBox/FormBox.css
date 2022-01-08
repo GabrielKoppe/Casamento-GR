@@ -33,32 +33,44 @@
     width: 100%;
     float: left;
     border-bottom: 1px solid rgb(68, 59, 52);
-    font-size: 1.2rem;
+    font-family: 'msyi';
+    font-size: 1.5rem;
 }
 
 #form-number-invited {
     display: flex;
-    justify-content: space-around;
-}
-
-#btn-number-invited {
-    width: 30%;
+    flex-direction: column;
+    align-items: center;
 }
 
 #ipt-number-invited {
     border-bottom: none;
-    width: 65%;
-    text-align: center;
+    width: 60%;
+    text-align: left;
+    /* border: solid 1px #bf2f0f;*/
 }
 
 #header-invited {
     font-size: 1.3rem;
+    padding: 0;
 }
 
 #container-all-invited {
     display: flex;
     flex-direction: column;
-    max-height: 55vh;
+    align-items: center;
+}
+
+.loading {
+    font-size: 50px;
+    padding: 10px;
+    animation: is-rotating 1.5s infinite;
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
 }
 
 input[type=number]::-webkit-inner-spin-button {
@@ -67,7 +79,7 @@ input[type=number]::-webkit-inner-spin-button {
     min-height: 45px;
     margin: 30px;
     padding: 0;
-    background-image: linear-gradient(to top, transparent 0px, transparent 16px, #F4EADC 16px, #F4EADC 26px, transparent 26px, transparent 35px, #000 35px, #000 36px, transparent 36px, transparent 40px), linear-gradient(to right, transparent 0px, transparent 10px, #000 10px, #000 11px, transparent 11px, transparent 21px);
+    background-image: linear-gradient(to top, transparent 0px, transparent 16px, #f9f7ef 16px, #f9f7ef 26px, transparent 26px, transparent 35px, #000 35px, #000 36px, transparent 36px, transparent 40px), linear-gradient(to right, transparent 0px, transparent 10px, #000 10px, #000 11px, transparent 11px, transparent 21px);
     transform: rotate(90deg) scale(0.8, 0.9);
     cursor: pointer;
 }
@@ -82,10 +94,16 @@ input[type=number]::-webkit-inner-spin-button {
 .container-invited {
     height: auto;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .error-text {
     color: #bf2f0f;
+    padding: 1rem;
+}
+
+.mensagem-text {
+    padding: 1rem;
 }
 
 @media (max-width: 760px) {

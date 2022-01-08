@@ -28,7 +28,7 @@ export default class Navbar extends Component {
                 offset={-100}
                 duration={500}
               >
-                Nossa História
+                a nossa história
               </Link>
             </li>
             <li className="nav-item">
@@ -40,7 +40,7 @@ export default class Navbar extends Component {
                 offset={-100}
                 duration={500}
               >
-                Nosso Dia
+                sobre o nosso dia
               </Link>
             </li>
             <li className="nav-item">
@@ -52,7 +52,7 @@ export default class Navbar extends Component {
                 offset={-100}
                 duration={500}
               >
-                RSVP
+                confirme sua presença
               </Link>
             </li>
             <li className="nav-item">
@@ -64,7 +64,7 @@ export default class Navbar extends Component {
                 offset={-100}
                 duration={500}
               >
-                Lista de Presente
+                lista de presentes
               </Link>
             </li>
           </ul>

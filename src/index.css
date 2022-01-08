@@ -14,7 +14,7 @@
 
 :root {
     background-color: rgb(255, 252, 240);
-    background-image: url(../src/assets/flores2.png);
+    background-image: url(../src/assets/fundo_web.png);
     background-attachment: fixed;
 }
 
@@ -39,4 +39,14 @@
 @font-face {
     font-family: 'MerchantLedger-RoughThin';
     src: url('./fonts/MerchantLedger-RoughThin.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('./fonts/MyriadPro-Regular.otf') format('opentype')
+}
+
+@font-face {
+    font-family: 'msyi';
+    src: url('./fonts/msyi.ttf') format('truetype')
 }

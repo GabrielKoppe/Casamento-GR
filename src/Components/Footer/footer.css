@@ -1,6 +1,12 @@
-.footer-logo {
-    height: 5vw;
-    width: 5vw;
+footer {
+    padding: 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+img.footer-logo {
+    height: 120px;
+    width: 120px;
 }
 
 @media (max-width: 760px) {

@@ -1,20 +1,28 @@
 h1 {
     font-family: 'MerchantLedger';
     font-size: 2rem;
-    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center
 }
 
 p {
-    font-family: 'MerchantLedger-Thin';
-    font-size: 1.3rem;
+    font-family: 'msyi';
+    font-size: 1.5rem;
+    text-align: justify;
+    text-indent: 5rem;
+}
+
+a {
+    color: black;
 }
 
 .section-content {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: auto;
     background-color: transparent;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 2rem;
 }
 
 .boxes {
@@ -29,6 +37,17 @@ p {
     vertical-align: middle;
     text-align: center;
     overflow: hidden;
+    padding: 1rem;
+}
+
+.adjust_text p {
+    text-indent: 0;
+    text-align: start;
+}
+
+#section1,
+#section3 {
+    max-width: 800px;
 }
 
 @media (max-width: 1400px) {

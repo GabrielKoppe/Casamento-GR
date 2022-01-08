@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FormBox.css';
+import { BsArrowClockwise } from "react-icons/bs";
 
 var convidado = {
     nome: "",
@@ -12,6 +13,7 @@ function FormBox({title}) {
     const [number, setNumber] = useState(0)
     const [error, setError] = useState([])
     const [mensagem, setMensagem] = useState([])
+    const [but, setBut] = useState(null)
 
     function jsonContructor(ev) {
         var j = 0
@@ -25,6 +27,7 @@ function FormBox({title}) {
 
     function invitedSubmit(ev) {
         ev.preventDefault();
+        setBut(1)
         if(aux) {
             const invited = jsonContructor(ev)
             
@@ -48,8 +51,9 @@ function FormBox({title}) {
                         })
                     } else {
                         res.json().then(data => {
-                            setError(data)
-                            setMensagem([])
+                            setError(data);
+                            setMensagem([]);
+                            setBut(null);
                         })
                     }
                 }
@@ -65,6 +69,7 @@ function FormBox({title}) {
         for (var i = 0; i < n; i++) {
             array.push(convidado);
         }
+        setBut(null);
         setNumber(n);
         setValues(array);
         setAux(1);
@@ -73,10 +78,9 @@ function FormBox({title}) {
     return (
         <div className="box_form">
             <h1>{title}</h1>
-            <p>Confirme aqui!</p>
             <div className="form-container">
                 <form id="form-number-invited" className="formbox" onSubmit={invitedState}>
-                    <input id="ipt-number-invited" type="number" placeholder="Numero de Convidados" name="convidados" min="1" max="6"/>
+                    <input id="ipt-number-invited" type="number" placeholder="Número de convidados a confirmar:" name="convidados" min="1" max="6"/>
                     <button id="btn-number-invited" type="submit" className="btn">Incluir</button> 
                 </form>
                 { !aux ? null : 
@@ -86,27 +90,29 @@ function FormBox({title}) {
                             <div key={`div${indice}`} className="container-invited">
                                 <h1 id="header-invited" key={`convidado${indice}`}>Convidado {indice + 1}</h1>
                                 <input type="text" placeholder="Nome" name="nome" key={`nome${indice}`} />
-                                <input type="text" placeholder="Email" name="email" key={`email${indice}`} />
+                                <input type="text" placeholder="E-mail" name="email" key={`email${indice}`} />
                             </div>
                         ))}
-                        <button 
+                        {!but ? (<button 
                             type="submit"
+                            id="btn-number-invited"
                             className="btn"
                             disabled={!aux}
                         >
                             Confirmar Presença
-                        </button> 
+                        </button>) : 
+                        (<div> <BsArrowClockwise className="loading"/> </div>)}
                     </form>
                     )
                 }
                 {
                     error.error? (
-                    <div className="error-text">{error.error}</div>
+                    <p className="error-text">{error.error}</p>
                     ) : (null)
                 }
                 {
                     mensagem.mensagem? (
-                    <div className="mensagem-text">{mensagem.mensagem}</div>
+                    <p className="mensagem-text">{mensagem.mensagem}</p>
                     ) : (null)
                 }
             </div>
