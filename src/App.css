@@ -12,18 +12,6 @@ body {
     font-size: 14px;
 }
 
-@media (max-width: 1024px) {
-    body {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 640px) {
-    body {
-        font-size: 10px;
-    }
-}
-
 
 /* BASE BOTÂO */
 
@@ -52,6 +40,6 @@ body {
 
 @media (max-width: 640px) {
     .btn {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }

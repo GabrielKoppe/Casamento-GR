@@ -80,7 +80,7 @@ function FormBox({title}) {
             <h1>{title}</h1>
             <div className="form-container">
                 <form id="form-number-invited" className="formbox" onSubmit={invitedState}>
-                    <input id="ipt-number-invited" type="number" placeholder="Número de convidados a confirmar:" name="convidados" min="1" max="6"/>
+                    <input id="ipt-number-invited" type="number" placeholder="Convidados a confirmar:" name="convidados" min="1" max="6"/>
                     <button id="btn-number-invited" type="submit" className="btn">Incluir</button> 
                 </form>
                 { !aux ? null : 

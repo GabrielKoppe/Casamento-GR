@@ -14,7 +14,6 @@ import TextDay from "./Components/Boxes/TextBox/Textos/TextDay";
 import TextGift from "./Components/Boxes/TextBox/Textos/TextGift";
 
 import img3low from "./assets/34.jpg"
-import img3high from "./assets/3high.jpg"
 
 const position = [-23.0235837,-43.5197324]
 
@@ -38,7 +37,7 @@ class App extends Component {
               <TextDay/>
             </BoxText>
           </div>
-          <div className="box">
+          <div className="box maps">
             <MapContainer center={position} zoom={15} scrollWheelZoom={false}>
               <TileLayer
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -54,7 +53,7 @@ class App extends Component {
         </Section>
 
         <Section id="section3">
-          <div className="box" id="form-mobile">
+          <div className="box">
             <BoxForm 
               title="confirme sua presença"
             />

@@ -28,7 +28,6 @@ a {
 .boxes {
     display: flex;
     flex-direction: row;
-    height: 100%;
     padding: 1rem;
 }
 
@@ -50,36 +49,30 @@ a {
     max-width: 800px;
 }
 
-@media (max-width: 1400px) {
-    .section-content {
-        max-width: 900px;
-    }
-}
-
 @media (max-width: 970px) {
     .section-content {
         max-width: 800px;
     }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 640px) {
     .boxes {
         flex-direction: column;
     }
-    .box {
-        height: 50%;
-    }
     h1 {
-        font-size: 1.4rem;
-        padding-top: 0.8rem;
+        font-size: 1.7rem;
     }
     p {
-        font-size: 0.8rem;
+        font-size: 1.4rem;
     }
-    #image-form {
-        height: 0%;
+    .section-content {
+        padding: 0 10px;
     }
-    #form-mobile {
-        height: 100%;
+    .box {
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+    .maps {
+        padding-bottom: 0;
     }
 }

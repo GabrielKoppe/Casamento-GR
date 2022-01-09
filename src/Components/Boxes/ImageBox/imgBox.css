@@ -5,17 +5,3 @@
 .img {
     width: 100%;
 }
-
-@media (max-width: 1200px) {
-    .img {
-        width: auto;
-        height: 100%;
-    }
-}
-
-@media (max-width: 800px) {
-    .img {
-        width: 100%;
-        height: auto;
-    }
-}

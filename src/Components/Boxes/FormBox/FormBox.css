@@ -10,20 +10,6 @@
     scrollbar-color: rgba(99, 98, 107, 0.5) transparent;
 }
 
-.formbox::-webkit-scrollbar {
-    width: 6px;
-}
-
-.formbox::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.formbox::-webkit-scrollbar-thumb {
-    background-color: rgba(99, 98, 107, 0.5);
-    border-radius: 20px;
-    border: 3px solid transparent;
-}
-
 .formbox input {
     border: none;
     outline: none;
@@ -45,9 +31,10 @@
 
 #ipt-number-invited {
     border-bottom: none;
-    width: 60%;
+    width: 65%;
     text-align: left;
-    /* border: solid 1px #bf2f0f;*/
+    text-align: center;
+    border: solid 2px #b25f51;
 }
 
 #header-invited {
@@ -79,7 +66,7 @@ input[type=number]::-webkit-inner-spin-button {
     min-height: 45px;
     margin: 30px;
     padding: 0;
-    background-image: linear-gradient(to top, transparent 0px, transparent 16px, #f9f7ef 16px, #f9f7ef 26px, transparent 26px, transparent 35px, #000 35px, #000 36px, transparent 36px, transparent 40px), linear-gradient(to right, transparent 0px, transparent 10px, #000 10px, #000 11px, transparent 11px, transparent 21px);
+    background-image: linear-gradient(to top, transparent 0px, transparent 16px, #f9f7ef 16px, #f9f7ef 26px, transparent 26px, transparent 35px, #b25f51 35px, #b25f51 36px, transparent 36px, transparent 40px), linear-gradient(to right, transparent 0px, transparent 10px, #b25f51 10px, #b25f51 11px, transparent 11px, transparent 21px);
     transform: rotate(90deg) scale(0.8, 0.9);
     cursor: pointer;
 }
@@ -106,14 +93,16 @@ input[type=number]::-webkit-inner-spin-button {
     padding: 1rem;
 }
 
-@media (max-width: 760px) {
-    #header-invited {
-        font-size: 0.8rem;
-    }
+@media (max-width: 640px) {
     .formbox input {
-        font-size: 0.8rem;
+        padding-left: 18px;
+        font-size: 1rem;
     }
-    #container-all-invited {
-        max-height: 62vh;
+    input[type=number]::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+        background-image: none;
+        cursor: none;
+        -webkit-appearance: none;
+        margin: 0;
     }
 }
