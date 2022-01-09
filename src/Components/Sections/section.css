@@ -42,7 +42,7 @@ a {
 
 .adjust_text p {
     text-indent: 0;
-    text-align: start;
+    text-align: justify;
 }
 
 #section1,

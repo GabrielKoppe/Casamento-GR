@@ -36,7 +36,7 @@ body {
     font-family: 'msyi';
     font-size: 1.5rem;
     cursor: pointer;
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .btn:hover {

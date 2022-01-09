@@ -68,10 +68,9 @@ class App extends Component {
             </BoxText>
           </div>
           <div className="box">
-            <BoxImg
-              propstyle="width: 120%;" 
+            <BoxImg 
               lowImg={img3low}
-              highImg={img3high}
+              highImg={img3low}
             />
           </div>
         </Section>

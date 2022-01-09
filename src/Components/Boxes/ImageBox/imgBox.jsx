@@ -1,7 +1,7 @@
 import React from "react";
 import "./imgBox.css";
 
-function textBox({ lowImg, highImg, propstyle }) {
+function textBox({ lowImg, highImg }) {
     return ( 
         <picture className = "img-box" alt = "Raquel e Gabriel" >
             <source className = "img" media="(min-width: 800px)" srcSet= { highImg }/>
