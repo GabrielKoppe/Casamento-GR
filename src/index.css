@@ -50,3 +50,8 @@
     font-family: 'msyi';
     src: url('./fonts/msyi.ttf') format('truetype')
 }
+
+@font-face {
+    font-family: 'CasamentoMachine';
+    src: url('./fonts/CasamentoMachine.otf') format('opentype')
+}

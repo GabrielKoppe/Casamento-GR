@@ -87,10 +87,12 @@ input[type=number]::-webkit-inner-spin-button {
 .error-text {
     color: #bf2f0f;
     padding: 1rem;
+    text-indent: 0;
 }
 
 .mensagem-text {
     padding: 1rem;
+    text-indent: 0;
 }
 
 @media (max-width: 640px) {

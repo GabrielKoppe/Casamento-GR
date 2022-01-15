@@ -1,5 +1,9 @@
+* {
+    font-family: 'msyi';
+}
+
 h1 {
-    font-family: 'MerchantLedger';
+    font-family: 'CasamentoMachine';
     font-size: 2rem;
     padding-bottom: 2rem;
     text-align: center
@@ -47,6 +51,11 @@ a {
 #section1,
 #section3 {
     max-width: 800px;
+}
+
+#section2 h1,
+#section4 h1 {
+    text-align: left;
 }
 
 @media (max-width: 970px) {

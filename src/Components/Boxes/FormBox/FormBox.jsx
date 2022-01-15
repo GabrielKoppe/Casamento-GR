@@ -73,6 +73,8 @@ function FormBox({title}) {
         setNumber(n);
         setValues(array);
         setAux(1);
+        setMensagem([])
+        setError([])
     }
 
     return (
