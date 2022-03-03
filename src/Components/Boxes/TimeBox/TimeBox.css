@@ -1,0 +1,21 @@
+.countDown {
+    color: #272d29;
+    display: flex;
+    padding-bottom: 1rem;
+}
+.two-numbers { 
+    width: 100%;
+}
+.timeSection {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.timeSection h1 {
+    padding: 0;
+}
+.timeSection p {
+    text-align: center;
+    text-indent: 0;
+}

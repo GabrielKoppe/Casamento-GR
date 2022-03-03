@@ -7,13 +7,16 @@ import Footer from "./Components/Footer/index";
 import BoxText from "./Components/Boxes/TextBox/textBox";
 import BoxImg from "./Components/Boxes/ImageBox/imgBox";
 import BoxForm from "./Components/Boxes/FormBox/FormBox";
+import BoxTimer from "./Components/Boxes/TimeBox/TimeBox"
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 import TextHistory from "./Components/Boxes/TextBox/Textos/TextHistory";
 import TextDay from "./Components/Boxes/TextBox/Textos/TextDay";
 import TextGift from "./Components/Boxes/TextBox/Textos/TextGift";
 
-import img3low from "./assets/34.jpg"
+import flor from "./assets/flor_2-16.svg"
+
+import img3low from "./assets/FotoFooter1.jpg"
 
 const position = [-23.0235837,-43.5197324]
 
@@ -28,8 +31,15 @@ class App extends Component {
           <BoxText title="a nossa história">
             <TextHistory/>
           </BoxText>
-
         </Section>
+
+        <div className="separator">
+          <img
+            src={flor}
+            alt="img"
+            className="separator-img"
+          />
+        </div>
 
         <Section id="section2">
           <div className="box">
@@ -50,6 +60,11 @@ class App extends Component {
               </Marker>
             </MapContainer>
           </div>
+        </Section>
+
+
+        <Section>
+          <BoxTimer />
         </Section>
 
         <Section id="section3">

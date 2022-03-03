@@ -34,11 +34,11 @@
     width: 65%;
     text-align: left;
     text-align: center;
-    border: solid 2px #b25f51;
+    border: solid 2px #606644;
 }
 
 #header-invited {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 0;
 }
 
@@ -66,7 +66,7 @@ input[type=number]::-webkit-inner-spin-button {
     min-height: 45px;
     margin: 30px;
     padding: 0;
-    background-image: linear-gradient(to top, transparent 0px, transparent 16px, #f9f7ef 16px, #f9f7ef 26px, transparent 26px, transparent 35px, #b25f51 35px, #b25f51 36px, transparent 36px, transparent 40px), linear-gradient(to right, transparent 0px, transparent 10px, #b25f51 10px, #b25f51 11px, transparent 11px, transparent 21px);
+    background-image: linear-gradient(to top, transparent 0px, transparent 16px, #f9f7ef 16px, #f9f7ef 26px, transparent 26px, transparent 35px, #606644 35px, #606644 36px, transparent 36px, transparent 40px), linear-gradient(to right, transparent 0px, transparent 10px, #606644 10px, #606644 11px, transparent 11px, transparent 21px);
     transform: rotate(90deg) scale(0.8, 0.9);
     cursor: pointer;
 }
@@ -98,6 +98,9 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width: 640px) {
     .formbox input {
         padding-left: 18px;
+        font-size: 1rem;
+    }
+    #header-invited {
         font-size: 1rem;
     }
     input[type=number]::-webkit-inner-spin-button,

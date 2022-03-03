@@ -6,7 +6,8 @@ h1 {
     font-family: 'CasamentoMachine';
     font-size: 2rem;
     padding-bottom: 2rem;
-    text-align: center
+    text-align: center;
+    color: #272d29;
 }
 
 p {
@@ -14,10 +15,11 @@ p {
     font-size: 1.5rem;
     text-align: justify;
     text-indent: 5rem;
+    color: #272d29;
 }
 
 a {
-    color: black;
+    color: #272d29;
 }
 
 .section-content {
@@ -33,6 +35,7 @@ a {
     display: flex;
     flex-direction: row;
     padding: 1rem;
+    justify-content: center;
 }
 
 .box {
@@ -69,7 +72,8 @@ a {
         flex-direction: column;
     }
     h1 {
-        font-size: 1.7rem;
+        padding-top: 1rem;
+        font-size: 1.6rem;
     }
     p {
         font-size: 1.4rem;
