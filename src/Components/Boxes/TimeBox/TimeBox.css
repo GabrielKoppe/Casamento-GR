@@ -1,21 +1,35 @@
-.countDown {
+.time-box h1{
+    padding-bottom: 0;
+}
+.countdown {
     color: #272d29;
     display: flex;
-    padding-bottom: 1rem;
+    justify-content: space-evenly;
 }
 .two-numbers { 
     width: 100%;
 }
-.timeSection {
+.time-section {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 30px;
 }
 
-.timeSection h1 {
+.time-section h1 {
+    font-size: 3rem;
     padding: 0;
 }
-.timeSection p {
+.time-section p {
     text-align: center;
     text-indent: 0;
+}
+
+@media (max-width: 640px) {
+    .time-section {
+        margin: 1rem 0;
+    }
+    .time-section h1 {
+        font-size: 2rem;
+        padding: 0;
+    }
 }

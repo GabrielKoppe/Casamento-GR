@@ -61,23 +61,26 @@ function TimeBox(){
   }
 
   return(
-    <div className="countDown">
-        <div className="timeSection">
-            <h1>{remainingTime.days}</h1>
-            <p>Dias</p>
-        </div>
-        <div className="timeSection">
-            <h1 className='two-numbers'>{remainingTime.hours}</h1>
-            <p>Horas</p>
-        </div>
-        <div className="timeSection">
-            <h1 className='two-numbers'>{remainingTime.minutes}</h1>
-            <p>Minutos</p>
-        </div>
-        <div className="timeSection">
-            <h1 className='two-numbers'>{remainingTime.seconds}</h1>
-            <p>Segundos</p>
-        </div>
+    <div className="time-box">
+      {/*<h1>Faltam</h1>*/}
+      <div className="countdown">
+          <div className="time-section">
+              <h1>{remainingTime.days}</h1>
+              <p>Dias</p>
+          </div>
+          <div className="time-section">
+              <h1 className='two-numbers'>{remainingTime.hours}</h1>
+              <p>Horas</p>
+          </div>
+          <div className="time-section">
+              <h1 className='two-numbers'>{remainingTime.minutes}</h1>
+              <p>Minutos</p>
+          </div>
+          <div className="time-section">
+              <h1 className='two-numbers'>{remainingTime.seconds}</h1>
+              <p>Segundos</p>
+          </div>
+      </div>
     </div>
   )
 }

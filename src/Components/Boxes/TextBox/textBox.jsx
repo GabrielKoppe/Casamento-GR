@@ -1,5 +1,4 @@
 import React from "react";
-import "./textBox.css";
 
 function textBox({ title, children}) {
   return (

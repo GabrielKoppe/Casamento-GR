@@ -62,10 +62,17 @@ class App extends Component {
           </div>
         </Section>
 
-
         <Section>
           <BoxTimer />
         </Section>
+
+        <div className="separator">
+          <img
+            src={flor}
+            alt="img"
+            className="separator-img"
+          />
+        </div>
 
         <Section id="section3">
           <div className="box">
